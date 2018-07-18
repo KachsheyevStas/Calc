@@ -1,0 +1,10 @@
+F:\git-project\Calc\Calc\Calc\bin\Debug\netcoreapp2.0\Calc.deps.json
+F:\git-project\Calc\Calc\Calc\bin\Debug\netcoreapp2.0\Calc.runtimeconfig.json
+F:\git-project\Calc\Calc\Calc\bin\Debug\netcoreapp2.0\Calc.runtimeconfig.dev.json
+F:\git-project\Calc\Calc\Calc\bin\Debug\netcoreapp2.0\Calc.dll
+F:\git-project\Calc\Calc\Calc\bin\Debug\netcoreapp2.0\Calc.pdb
+F:\git-project\Calc\Calc\Calc\obj\Debug\netcoreapp2.0\Calc.csproj.CoreCompileInputs.cache
+F:\git-project\Calc\Calc\Calc\obj\Debug\netcoreapp2.0\Calc.AssemblyInfoInputs.cache
+F:\git-project\Calc\Calc\Calc\obj\Debug\netcoreapp2.0\Calc.AssemblyInfo.cs
+F:\git-project\Calc\Calc\Calc\obj\Debug\netcoreapp2.0\Calc.dll
+F:\git-project\Calc\Calc\Calc\obj\Debug\netcoreapp2.0\Calc.pdb
