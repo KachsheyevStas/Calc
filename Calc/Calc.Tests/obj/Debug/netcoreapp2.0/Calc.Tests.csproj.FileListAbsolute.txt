@@ -1,0 +1,17 @@
+F:\git-project\Calc\Calc\Calc.Tests\bin\Debug\netcoreapp2.0\Calc.Tests.deps.json
+F:\git-project\Calc\Calc\Calc.Tests\bin\Debug\netcoreapp2.0\Calc.Tests.dll
+F:\git-project\Calc\Calc\Calc.Tests\obj\Debug\netcoreapp2.0\Calc.Tests.csprojAssemblyReference.cache
+F:\git-project\Calc\Calc\Calc.Tests\obj\Debug\netcoreapp2.0\Calc.Tests.csproj.CoreCompileInputs.cache
+F:\git-project\Calc\Calc\Calc.Tests\obj\Debug\netcoreapp2.0\Calc.Tests.AssemblyInfoInputs.cache
+F:\git-project\Calc\Calc\Calc.Tests\obj\Debug\netcoreapp2.0\Calc.Tests.AssemblyInfo.cs
+F:\git-project\Calc\Calc\Calc.Tests\bin\Debug\netcoreapp2.0\Calc.Tests.runtimeconfig.json
+F:\git-project\Calc\Calc\Calc.Tests\bin\Debug\netcoreapp2.0\Calc.Tests.runtimeconfig.dev.json
+F:\git-project\Calc\Calc\Calc.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+F:\git-project\Calc\Calc\Calc.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+F:\git-project\Calc\Calc\Calc.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+F:\git-project\Calc\Calc\Calc.Tests\bin\Debug\netcoreapp2.0\Calc.Tests.pdb
+F:\git-project\Calc\Calc\Calc.Tests\bin\Debug\netcoreapp2.0\Calc.dll
+F:\git-project\Calc\Calc\Calc.Tests\bin\Debug\netcoreapp2.0\Calc.pdb
+F:\git-project\Calc\Calc\Calc.Tests\obj\Debug\netcoreapp2.0\Calc.Tests.csproj.CopyComplete
+F:\git-project\Calc\Calc\Calc.Tests\obj\Debug\netcoreapp2.0\Calc.Tests.dll
+F:\git-project\Calc\Calc\Calc.Tests\obj\Debug\netcoreapp2.0\Calc.Tests.pdb

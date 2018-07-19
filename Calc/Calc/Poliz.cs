@@ -92,7 +92,7 @@ namespace Calc
 
                 return outputSeparated.ToArray();
             }
-        public decimal result(string input)
+        public decimal Result(string input)
             {
                 Stack<string> stack = new Stack<string>();
                 Queue<string> queue = new Queue<string>(ConvertToPostfixNotation(input));

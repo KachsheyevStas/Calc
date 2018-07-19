@@ -16,9 +16,9 @@ namespace Calc
             Poliz str = new Poliz();
             str.input = InputData;
            // Console.WriteLine(str.input);
-            str.ConvertToPostfixNotation(InputData);
+           // str.ConvertToPostfixNotation(InputData);
             Console.Write("Результат:");
-            Console.WriteLine(str.result(str.input));
+            Console.WriteLine(str.Result(str.input));
             Console.ReadKey();
         }
     }
