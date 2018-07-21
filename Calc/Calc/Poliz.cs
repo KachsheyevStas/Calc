@@ -8,15 +8,16 @@ namespace Calc
     {
         public Poliz()
         {
-            operators = new List<string>(new string[] { "+", "-", "*", "/", "(", ")", });
+            operators = operators = new List<string>(standart_operators);
         }
         public string input;
         private List<string> operators;
-       /*/ private List<string> standart_operators =
-        new List<string>(new string[] {  "+", "-", "*", "/", "(", ")", });*/
+        private List<string> standart_operators =
+        new List<string>(new string[] {  "+", "-", "*", "/", "(", ")", });
         public IEnumerable<string> Separate(string input)
         {
             int pos = 0;
+            input.Replace(',', '.');
             while (pos < input.Length)
             {
                 string s = string.Empty + input[pos];
@@ -25,6 +26,9 @@ namespace Calc
                     if (Char.IsDigit(input[pos]))
                         for (int i = pos + 1; i < input.Length &&
                             (Char.IsDigit(input[i]) || input[i] == ',' || input[i] == '.'); i++)
+                            s += input[i];
+                    else if (input[pos] == '.')
+                         for (int i = pos + 1; i < input.Length && (Char.IsLetter(input[i])); i++)
                             s += input[i];
                     else if (Char.IsLetter(input[pos]))
                         for (int i = pos + 1; i < input.Length &&
@@ -92,7 +96,7 @@ namespace Calc
 
                 return outputSeparated.ToArray();
             }
-        public decimal Result(string input)
+        public double Result(string input)
             {
                 Stack<string> stack = new Stack<string>();
                 Queue<string> queue = new Queue<string>(ConvertToPostfixNotation(input));
@@ -106,38 +110,36 @@ namespace Calc
                     }
                     else
                     {
-                        decimal summ = 0;
+                        double summ = 0;
                         try
                         {
-
                             switch (str)
                             {
-
                                 case "+":
                                     {
-                                        decimal a = Convert.ToDecimal(stack.Pop());
-                                        decimal b = Convert.ToDecimal(stack.Pop());
+                                        double a = Convert.ToDouble(stack.Pop());
+                                        double b = Convert.ToDouble(stack.Pop());
                                         summ = a + b;
                                         break;
                                     }
                                 case "-":
                                     {
-                                        decimal a = Convert.ToDecimal(stack.Pop());
-                                        decimal b = Convert.ToDecimal(stack.Pop());
+                                        double a = Convert.ToDouble(stack.Pop());
+                                        double b = Convert.ToDouble(stack.Pop());
                                         summ = b - a;
                                         break;
                                     }
                                 case "*":
                                     {
-                                        decimal a = Convert.ToDecimal(stack.Pop());
-                                        decimal b = Convert.ToDecimal(stack.Pop());
+                                        double a = Convert.ToDouble(stack.Pop());
+                                        double b = Convert.ToDouble(stack.Pop());
                                         summ = b * a;
                                         break;
                                     }
                                 case "/":
                                     {
-                                        decimal a = Convert.ToDecimal(stack.Pop());
-                                        decimal b = Convert.ToDecimal(stack.Pop());
+                                        double a = Convert.ToDouble(stack.Pop());
+                                        double b = Convert.ToDouble(stack.Pop());
                                         summ = b / a;
                                         break;
                                     }
@@ -155,7 +157,7 @@ namespace Calc
                 }
 
             }
-            return Convert.ToDecimal(stack.Pop());
+            return Convert.ToDouble(stack.Pop());
         }
     }
     
