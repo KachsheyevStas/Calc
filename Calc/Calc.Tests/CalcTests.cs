@@ -14,11 +14,7 @@ namespace Calc.Tests
             string InputData= "1+2-3";
             double expected = 0;
             // Act
-            Poliz str = new Poliz
-            {
-                input = InputData
-            };
-            double actual = str.Result(str.input);
+            double actual = Poliz.Calculate(InputData);
             // Assert
             Assert.Equal( expected, actual);
         }
@@ -29,11 +25,31 @@ namespace Calc.Tests
             string InputData = "5*2-4*(8-2)";
             double expected = -14;
             // Act
-            Poliz str = new Poliz
-            {
-                input = InputData
-            };
-            double actual = str.Result(str.input);
+            double actual = Poliz.Calculate(InputData);
+            // Assert
+            Assert.Equal(expected, actual);
+        }
+        [Fact]
+        public void Test()
+        {
+            // Arrange
+            string InputData = "5*2-4";
+            string expected = "5 2 * 4 -";
+            // Act
+            string actual = Poliz.GetExpression(InputData);
+
+            // Assert
+            Assert.Equal(expected, actual);
+        }
+        [Fact]
+        public void Fraction()
+        {
+            // Arrange
+            string InputData = "5*2.5";
+            double expected = 12.5;
+            // Act
+            double actual = Poliz.Calculate(InputData);
+
             // Assert
             Assert.Equal(expected, actual);
         }
